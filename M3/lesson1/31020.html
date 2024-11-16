@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/mra_base.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>AFIT - Manufacturing Readiness Assessment</title>
+<!-- InstanceEndEditable -->
+<link href="../../afit_mra.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="../../scripts/afit_mra.js"></script>
+<script type="text/javascript" src="../../scripts/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="../../scripts/jqFunctions.js"></script>
+<script src="../../scripts/swfobject_modified.js" type="text/javascript"></script>
+<!-- InstanceBeginEditable name="head" -->
+
+<script language="JavaScript" type="text/javascript">
+	//Set the following 3 variables to true accordingly
+	blnFirstPage = false;
+	blnLastPage = false;
+	blnHasCC = false;
+	qID = 2;
+
+	function pgInitialize() {
+		//if ( !parent.isPageViewed('31020')) hideNextButton();
+		hideBackButton();
+	}
+	
+	function goNext() {
+		nextURL = "31030.html";
+		parent.gotoPage("f", nextURL);
+	}
+	
+	function goBack() {
+		backURL = "31010.html";
+		parent.gotoPage("b", backURL);
+	}
+
+	//Call this function from Flash
+	function setQuestion( uAnswer ) {
+		//uAnswer = 1 if correct, 0 otherwise
+		if (parent.inQuiz) parent.quiz[qID] = uAnswer;	//set question status
+		showNextButton();
+	}
+	
+</script>
+<!-- InstanceEndEditable -->
+</head>
+
+<body  class="holder" onload="pgInitialize()" >
+<div id="container">
+
+  <div id="titlebar">
+  	<div id="title_text">
+    	<span class="module"><!-- InstanceBeginEditable name="moduleTitle" -->MRA Assessment  &gt; <!-- InstanceEndEditable --></span><span class="lesson"><!-- InstanceBeginEditable name="lessonTitle" -->MRA in Action<!-- InstanceEndEditable --></span>
+    </div>
+  </div>
+  
+  <div id="pagenumber"><!-- InstanceBeginEditable name="pageNum" -->2/28<!-- InstanceEndEditable --></div>
+  
+  <div id="content_holder"> <!-- contains title, text and graphic/flash -->
+  
+  	<div id="content">
+<!-- InstanceBeginEditable name="contents" -->
+    	<h2 class="topic_title">Knowledge Check 2</h2>
+    	<p>From  the collection of Post-It notes on the Bottom, drag and drop the correct  Post-It notes into the statement on the Top to complete the purpose of a TRA. (This is a flash movie template. We are going to plug it in while it's done)</p>
+    	<p>The    purpose of a MRA is to evaluate a programs’ ability to <u>produce</u> on-schedule while meeting <u>cost</u> and <u>performance</u> requirements,    and to <u>develop</u> and implement manufacturing <u>risk</u> mitigations    plans and business <u>strategies</u>. </p>
+    	<p>Drag items:<table border="1" cellspacing="0" cellpadding="0"  width="100%">
+                <tr>
+                  <td width="216"><p>assessment</p></td>
+                  <td width="226"><p>performance</p></td>
+                  <td width="147"><p>schedule </p></td>
+                </tr>
+                <tr>
+                  <td width="216"><p>impact</p></td>
+                  <td width="226"><p>risk</p></td>
+                  <td width="147"><p>develop </p></td>
+                </tr>
+                <tr>
+                  <td width="216"><p>maturity </p></td>
+                  <td width="226"><p>produce</p></td>
+                  <td width="147"><p>cost </p></td>
+                </tr>
+                <tr>
+                  <td width="216"><p>lifecycle </p></td>
+                  <td width="226"><p>operational</p></td>
+                  <td width="147"><p>strategies </p></td>
+                </tr>
+              </table></p>
+      <p>Correct feedback: Correct! The  purpose of a MRA is to evaluate a programs’ ability to <u>produce</u> on-schedule while meeting <u>cost</u> and <u>performance</u> requirements, and  to <u>develop</u> and implement manufacturing <u>risk</u> mitigations plans and  business <u>strategies</u>. Select the forward arrow to continue.</p>
+      <p>1st Incorrect: That’s not quite right. Please try again.</p>
+      <p>2nd Incorrect:Sorry, that’s still not correct. The purpose of  a MRA is evaluate a programs’ ability to <u>produce</u> on-schedule while  meeting <u>cost</u> and <u>performance</u> requirements, and to <u>develop</u> and implement manufacturing <u>risk</u> mitigations plans and business <u>strategies</u>. Select the forward arrow to continue.</p>
+      <p>None Selected:You have not made any selections.  Please try again.</p>
+<!-- InstanceEndEditable -->
+  	</div>
+  
+  </div> <!-- End of content_holder -->
+  <div id="action"><!-- InstanceBeginEditable name="action" --><!-- InstanceEndEditable --></div>
+  <div id="dlink"><!-- InstanceBeginEditable name="dlink" --><!-- InstanceEndEditable --></div>
+  
+  <!-- InstanceBeginEditable name="Prompt" --><div id="prompt">Drag the items on the bottom to the statement on the top, then click Done.</div>
+
+  <!-- InstanceEndEditable -->
+    
+  <div id="navbar">  <!-- contains all buttons -->
+  
+    <a href="javascript:goNext()"><div id="next"></div></a>
+    
+    <a href="javascript:goBack()"><div id="back"></div></a>
+    
+  	<a href="javascript:exitConfirm()"><div id="exit"></div></a>
+    
+  	<div id="progressbar"> </div>
+    
+    <div id="pagecounter"></div>
+    
+	<div id="submenu">  <!-- contains MENU, TOPICS, ASSETS, and HELP -->
+    
+        <a href="javascript: parent.toModuleMenu();" ><div id="menu"></div></a>
+        
+        <a href="javascript:showTopics()"> <div id="topics"></div></a>
+        
+        <a href="javascript:toggle_asset()"><div id="assets"></div></a>
+        
+        <a href="javascript:toggle_help()"><div id="help"></div></a>
+
+    </div> <!-- End of submenu -->
+
+	<div id="assetpanel">
+    	<div id="gloss" class="panel"><a class="panel" href="javascript:openGlossary();">Glossary</a></div>
+        <div id="doc" class="panel"><a class="panel" href="javascript:;">Documents</a></div>
+        <div id="ref" class="panel"><a class="panel" href="javascript:openReferences();">References</a></div>
+    </div>
+    
+	<div id="helppanel">
+    	<div id="admin" class="panel"><a class="panel" href="javascript:;">Course Admin</a></div>
+        <div id="sysreq" class="panel"><a class="panel" href="javascript:;">System Req</a></div>
+        <div id="nav" class="panel"><a class="panel" href="javascript:;">Navigation</a></div>
+    </div>
+    
+	<div id="options">  <!-- containes Closed Caption, Audio, and Refresh -->
+        
+		<a href="javascript:refresh()" accesskey="r"><div id="refresh"></div></a>
+        
+        <a href="javascript:showCC()"><div id="cc"></div></a>
+        
+        <a href="#" class="audioAction" id="audioImage"><div id="audio"></div></a>
+        
+    </div> <!-- End of options -->
+    
+  </div> <!-- End of Navbar -->
+  
+    
+</div> <!-- End of Container -->
+<!-- InstanceBeginEditable name="DD" --><!-- InstanceEndEditable -->
+<div id="comment_link">
+    <a href="javascript:addComment()">Add Comment</a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="javascript:viewComment()">View Comments</a>
+</div>
+<script language="javascript">
+	if (parent.isPilot == true) {
+		moduleID = parent.module;
+		lessonID = parent.getLesson();
+	} else {
+		document.getElementById("comment_link").style.visibility = "hidden";
+	}
+</script>
+
+</body>
+<!-- InstanceEnd --></html>

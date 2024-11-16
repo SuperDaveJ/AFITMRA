@@ -1,0 +1,235 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/mra_base.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>AFIT - Manufacturing Readiness Assessment</title>
+<!-- InstanceEndEditable -->
+<link href="../../afit_mra.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="../../scripts/afit_mra.js"></script>
+<script type="text/javascript" src="../../scripts/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="../../scripts/jqFunctions.js"></script>
+<script src="../../scripts/swfobject_modified.js" type="text/javascript"></script>
+<!-- InstanceBeginEditable name="head" -->
+<script src="../../scripts/swfobject_modified.js" type="text/javascript"></script>
+<script language="JavaScript" type="text/javascript">
+//Set the following 3 variables to true accordingly
+		blnFirstPage = false;
+	blnLastPage = false;
+	blnHasCC = false;
+
+	function pgInitialize() {
+		if ( !parent.isPageViewed('26060')) hideNextButton();
+	}
+	
+	function goNext() {
+		nextURL = "26070.html";
+		parent.gotoPage("f", nextURL);
+	}
+	
+	function goBack() {
+		backURL = "26050.html";
+		parent.gotoPage("b", backURL);
+	}
+	
+ 
+ function evalMatches() {
+	for (var i=0; i<nObj; i++) {
+		//clear previous data first
+		arrUser[i] = "";
+		tempX = eval("dd.elements.img"+(i+1)+".x");
+		tempY = eval("dd.elements.img"+(i+1)+".y");
+		tX = dd.elements.targetHolder.x;
+		tY = dd.elements.targetHolder.y;
+		tW = dd.elements.targetHolder.w;
+		tH = dd.elements.targetHolder.h;
+		if (i<nObj/2) {
+			
+			if ( (tempX > tX) && (tempX < (tX + tW/2)) && (tempY > tY) && (tempY < (tY + tH)) ) {
+				arrUser[i] = eval("dd.elements.img"+(i+1)+".name");
+			}
+		} else {
+			if ( (tempX > (tX + tW/2) ) && (tempX < (tX + tW)) && (tempY > tY) && (tempY < (tY + tH)) ) {
+				arrUser[i] = eval("dd.elements.img"+(i+1)+".name");
+			}
+		}
+	}
+}
+</script>
+<script type="text/javascript" src="../../scripts/wz_dragdrop.js"></script>
+<script type="text/javascript" src="../../scripts/DD_Corkboard.js"></script>
+
+
+
+<!-- InstanceEndEditable -->
+</head>
+
+<body  class="holder" onload="pgInitialize()" >
+<div id="container">
+
+  <div id="titlebar">
+  	<div id="title_text">
+    	<span class="module"><!-- InstanceBeginEditable name="moduleTitle" -->MRA Process &gt; <!-- InstanceEndEditable --></span><span class="lesson"><!-- InstanceBeginEditable name="lessonTitle" -->Document Results<!-- InstanceEndEditable --></span>
+    </div>
+  </div>
+  
+  <div id="pagenumber"><!-- InstanceBeginEditable name="pageNum" -->6/7<!-- InstanceEndEditable --></div>
+  
+  <div id="content_holder"> <!-- contains title, text and graphic/flash -->
+  
+  	<div id="content">
+<!-- InstanceBeginEditable name="contents" -->
+<div id="DnDHolder" style="position:absolute; left:0; top:0; width:860px; height:420px;">
+
+<h2 class="topic_title">Status Check</h2>
+ 
+    <p>From the collection of Post-It notes on the Bottom, <br />
+      drag  and drop the correct Post-It notes into place 
+      below <br />
+      the proper heading.</p>
+      
+<div id="targetHolder" style="position:absolute; top:12px; left:380px; height:395px; width:492px;"><img src="../images/24080a.png" width="492" height="418" border="0" alt="Graphic background for List is a corkboard." /></div>
+
+<div id="c1" style="position:absolute; left:413px; top:42px; width:194px; height:20px; font-weight: bold;"><strong>Risk  Mitigation Planning helps Reduce Risk by:</strong></div>
+<div id="c2" style="position:absolute; left:639px; top:46px; width:200px; height:20px; font-weight: bold;"><strong>MRLs  Help Reduce Risk by: </strong></div>
+
+<!--=========== Drag items layers ===========-->
+<div id="dragHolder" style="position:relative; top:30px; left:0px; height:300px; width:390px;">
+  <!--=========== drag layers ===========-->
+  <div id="drag1" style="position:absolute; left:270px; top:128px; width:110px; height:108px; z-index:3;"><img name="img1" id="img1" src="../images/26060c.png" width="110" height="108" border="0" alt="What tests will be run?" /></div>
+  
+  <div id="drag2" style="position:absolute; left:-8px; top:131px; width:148px; height:154px; z-index:3;">
+    <img src="../images/26060d.png" alt="How does the test environment relate to the operational environment?" name="img2" width="148" height="154" border="0" id="img2" /></div>
+    
+  <div id="drag4" style="position:absolute; left:144px; top:151px; width:118px; height:116px; z-index:3;">
+    <img src="../images/26060f.png" alt="What MRL will be achieved and when will it be achieved?" name="img4" width="118" height="116" border="0" id="img4" /></div>
+    
+  <div id="drag6" style="position:absolute; left:261px; top:1px; width:118px; height:116px; z-index:3;">
+  <img src="../images/26060h.png" alt="A description of the manufacturing problem." name="img6" width="118" height="116" border="0" id="img6" /></div>
+  
+  <div id="drag3" style="position:absolute; left:5px; top:-6px; width:110px; height:108px; z-index:3;">
+  <img src="../images/26060e.png" alt="What prototypes or test articles will be built?" name="img3" width="110" height="108" border="0" id="img3" /></div>
+  
+  <div id="drag5" style="position:absolute; left:130px; top:-3px; width:133px; height:132px; z-index:3;"><img src="../images/26060g.png" alt="Identification of the system, subsystem, or component." name="img5" width="133" height="132" border="0" id="img5" /></div>
+  
+</div>
+ 
+<div id="done" style="position:absolute; text-align: center; left:286px; top:385px; z-index:25; width: 85px; height: 35px;"><a href="javascript:judgeInteraction();" ><img src="../../system/button_done_up.png" alt="Done button" id="btnDone" name="btnDone" width="85" height="35" border="0"></a></div>
+
+<div id="bar" style="position:absolute; left:623px; top:38px; width:1px; height:354px; border:1px solid black; background-color:#000; z-index:22;"></div>
+
+</div>
+
+<!-- End of DnDHolder -->
+
+      <!-- InstanceEndEditable -->
+  	</div>
+  
+  </div> <!-- End of content_holder -->
+  <div id="action"><!-- InstanceBeginEditable name="action" --><!-- InstanceEndEditable --></div>
+  <div id="dlink"><!-- InstanceBeginEditable name="dlink" --><!-- InstanceEndEditable --></div>
+  
+  <!-- InstanceBeginEditable name="Prompt" --><div id="prompt">Drag each Post-IT note to its appropriate spot, then click Done.</div>
+
+  <!-- InstanceEndEditable -->
+    
+  <div id="navbar">  <!-- contains all buttons -->
+  
+    <a href="javascript:goNext()"><div id="next"></div></a>
+    
+    <a href="javascript:goBack()"><div id="back"></div></a>
+    
+  	<a href="javascript:exitConfirm()"><div id="exit"></div></a>
+    
+  	<div id="progressbar"> </div>
+    
+    <div id="pagecounter"></div>
+    
+	<div id="submenu">  <!-- contains MENU, TOPICS, ASSETS, and HELP -->
+    
+        <a href="javascript: parent.toModuleMenu();" ><div id="menu"></div></a>
+        
+        <a href="javascript:showTopics()"> <div id="topics"></div></a>
+        
+        <a href="javascript:toggle_asset()"><div id="assets"></div></a>
+        
+        <a href="javascript:toggle_help()"><div id="help"></div></a>
+
+    </div> <!-- End of submenu -->
+
+	<div id="assetpanel">
+    	<div id="gloss" class="panel"><a class="panel" href="javascript:openGlossary();">Glossary</a></div>
+        <div id="doc" class="panel"><a class="panel" href="javascript:;">Documents</a></div>
+        <div id="ref" class="panel"><a class="panel" href="javascript:openReferences();">References</a></div>
+    </div>
+    
+	<div id="helppanel">
+    	<div id="admin" class="panel"><a class="panel" href="javascript:;">Course Admin</a></div>
+        <div id="sysreq" class="panel"><a class="panel" href="javascript:;">System Req</a></div>
+        <div id="nav" class="panel"><a class="panel" href="javascript:;">Navigation</a></div>
+    </div>
+    
+	<div id="options">  <!-- containes Closed Caption, Audio, and Refresh -->
+        
+		<a href="javascript:refresh()" accesskey="r"><div id="refresh"></div></a>
+        
+        <a href="javascript:showCC()"><div id="cc"></div></a>
+        
+        <a href="#" class="audioAction" id="audioImage"><div id="audio"></div></a>
+        
+    </div> <!-- End of options -->
+    
+  </div> <!-- End of Navbar -->
+  
+    
+</div> <!-- End of Container -->
+<!-- InstanceBeginEditable name="DD" -->
+<script type="text/javascript"> 
+<!--
+ 
+SET_DHTML("targetHolder"+NO_DRAG,"dragHolder"+NO_DRAG,"img1"+CURSOR_HAND+MAXOFFLEFT+150+MAXOFFRIGHT+610+MAXOFFTOP+190+MAXOFFBOTTOM+100,"img2"+CURSOR_HAND+MAXOFFLEFT+70+MAXOFFRIGHT+690+MAXOFFTOP+280+MAXOFFBOTTOM,"img3"+CURSOR_HAND+MAXOFFLEFT+10+MAXOFFRIGHT+730+MAXOFFTOP+60+MAXOFFBOTTOM+200,"img4"+CURSOR_HAND+MAXOFFLEFT+10+MAXOFFRIGHT+750+MAXOFFTOP+180+MAXOFFBOTTOM+80,"img5"+CURSOR_HAND+MAXOFFLEFT+140+MAXOFFRIGHT+605+MAXOFFTOP+60+MAXOFFBOTTOM+210,"img6"+CURSOR_HAND+MAXOFFLEFT+60+MAXOFFRIGHT+465+MAXOFFTOP+90+MAXOFFBOTTOM+180, "target1"+NO_DRAG,"target2"+NO_DRAG,"target3"+NO_DRAG);
+//NOTE: Set layers to draggable for this exercise does NOT work. 
+//		All draggable layers must be held in another layer like dragHolder in this example.
+ 
+var nObj = 6;
+var nCorrect = 6;
+arrOffset = new Array([10,60],[120,120],[20,200],[120,270],[270,70],[360,100]);	//Offset from targetHolder top-left corner
+var uCorrect = 0;
+var TriesUser = 0;
+var TriesLimit = 2;
+var fdbkCorrect, fdbkIncorrect0, fdbkIncorrect1, fdbkIncorrect2;
+fdbkCorrect = "<p style='font-weight:bold'>Correct!</p><p>MRLs are the foundation of risk mitigation</p> <p>Select the forward arrow to continue.</p>";
+ 
+fdbkIncorrect0 = "<p>You have not made any selections.  Please try again.</p>";
+ 
+fdbkIncorrect1 = "<p>That’s not quite right. One or more of your answers is incorrect. Reflect on each aspect of risk mitigation that was described in the lesson.</p> <p>Please try again.</p>";
+ 
+fdbkIncorrect2 = "<p>Sorry, that’s still not correct. <p>MRLs are the foundation of risk mitigation</p><p>Select the forward arrow to continue.</p>";
+ 
+//Draggable objects are always in sequential order: img1, img2, ...
+//first nCorrect imgs are correct ones
+arrCorrect = new Array('img1','img2','img3','img4','img5','img6');	//must have nObj items
+arrUser = new Array(nObj);
+for (var i=0; i<nObj; i++) arrUser[i] = ""
+ 
+-->
+</script>
+
+<!-- InstanceEndEditable -->
+<div id="comment_link">
+    <a href="javascript:addComment()">Add Comment</a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="javascript:viewComment()">View Comments</a>
+</div>
+<script language="javascript">
+	if (parent.isPilot == true) {
+		moduleID = parent.module;
+		lessonID = parent.getLesson();
+	} else {
+		document.getElementById("comment_link").style.visibility = "hidden";
+	}
+</script>
+
+</body>
+<!-- InstanceEnd --></html>

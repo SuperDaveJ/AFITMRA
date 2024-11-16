@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/txtPopup.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Popup Information</title>
+<!-- InstanceEndEditable -->
+<link href="../../afit_mra.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+	#poptext {
+		margin-top: 6px;
+		width: 610px;
+		height: 400px;
+		overflow: auto;
+		scrollbar-arrow-color:#ddd; 
+		scrollbar-base-color:#333;
+	}
+</style>
+
+<script language="JavaScript" type="text/JavaScript" src="../../scripts/afit_mra.js"></script>
+<!-- InstanceBeginEditable name="ScriptArea" -->
+<script src="../../scripts/swfobject_modified.js" type="text/javascript"></script>
+<script type="text/javascript" src="../../scripts/afit_mra.js"></script>
+<script src="../../scripts/swfobject_modified.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+var iTerm = getQueryValue('popterm')
+
+var arrPopup = new Array();
+var numTerm = 4;
+for (var i=0; i<numTerm; i++) {
+	arrPopup[i] = [];
+}
+
+
+arrPopup[0][0]  = "Manage cost, schedule, and performance risk";
+arrPopup[0][1]  = "<p>This is done by examining the maturity of:</p><ul><li>Design producibility and stability – can the design be produced repeatedly and accurately?</li><li>Manufacturing processes and tooling – are the processes and tooling that are in place adequate to produce the weapon within the stated parameters?</li><li>Workforce skills and training – Does the workforce posses the skills to produce the weapon? If necessary, is training available?</li><li>Supply chain capabilities – Are the raw materials readily available? Can they be obtained within the cost constraints?</li><li>Key materials and components - Will they be available throughout the life of the system?</li><li>Production test methods and equipment – Are the test methods repeatable and accurate to field conditions?</li></ul>";
+
+arrPopup[1][0]  = "Provide confidence to the weapons development"
+arrPopup[1][1]  = "<p>The MRA assures that weapons development will meet performance requirements in all units produced, that they can be built at predictable cost, built to a predictable program schedule, and have suppliers ready to provide the needed materials and parts.</p>";
+//
+arrPopup[2][0]  = "Help rebuild the support structure"
+arrPopup[2][1]  = "<p>Because the personnel who have the best understanding of MRA are close to retirement, or retired, the support structure is weakened. Performing a MRA helps locate the people who are still around that know the information and have the experience to share the lessons learned. It also helps train people to know and understand this information and rediscover the recipe for managing manufacturing risk.</p>";
+//
+arrPopup[3][0]  = "Meet DoD and Air Force policy requirements"
+arrPopup[3][1]  = "<ul><li>DoD  Requirements: DoD Acquisition MRA policy does not prescribe that formal MRAs be  tied to milestone reviews, but it does use MRL language as requirements tied to  milestone reviews.<ul><li>Department  of Defense Instruction (DoDI) 5000.02 – Operation of the Defense Acquisition  System (Dec 2008)<ul><li>MSA Phase (up to Milestone (MS) A)<ul><li>The AoA shall assess manufacturing  feasibility (MRA Deskbook MRL 2 Definition)</li></ul></li><li>Technology Development Phase (MS A  to B)<ul><li>Prototype systems or appropriate  component-level prototyping shall be employed to evaluate manufacturing  processes (MRA Deskbook MRL 5 / 6 Definition)</li><li>A  successful PDR will identify remaining design, integration, and manufacturing  risks </li><li>Exit  of the Technology Development Phase occurs when the technology and  manufacturing processes for that program or increment have been assessed and  demonstrated in a relevant environment. (MRA Deskbook MRL 6 Definition)</li><li>Manufacturing  risks have been identified. (MRA Deskbook MRL 5 / 6 Definition)</li></ul></li><li>Engineering and Manufacturing  Development Phase<ul><li>Develop  an affordable and executable manufacturing process.</li><li>Demonstrate  System Capability and Manufacturing Process.</li><li>Post-Critical  Design Review (CDR) Assessment includes the maturity of critical manufacturing  processes.</li><li>System  Capability and Manufacturing Process Demonstration show that system production  can be supported by demonstrated manufacturing processes. (MRA Deskbook MRL 7 /  8 Definition)</li><li>Exit  of the Engineering and Manufacturing Development Phase when manufacturing  processes have been effectively demonstrated in a pilot line environment. (MRA  Deskbook MRL 8 Definition)</li></ul></li><li>Production and Deployment Phase  (post MS C)<ul><li>Entrance  criteria for the Production and Deployment Phase include when no significant  manufacturing risks are present, and when the manufacturing processes are under  control (MRA Deskbook MRL 9 / 10 Definition)</li><li>LRIP  is intended to result in adequate and efficient manufacturing capability.</li></ul></li><li>Production and Deployment Phase  (post MS C)<ul><li>Full  Rate Production (FRP) Criteria includes demonstrated control of the  manufacturing process, (MRA Deskbook MRL 9 / 10 Definition), the collection of  statistical process control data, and demonstrated control and capability of  other critical processes (MRA Deskbook MRL 9 / 10 Definition)</li></ul></li></ul></li></ul></li><li>Air  Force Requirements: MRAs are not mandatory but are encouraged. It is mandatory  to include manufacturing risks as a part of all program reviews.<ul><li>Air  Force Policy Directive (AFPD) 63-1, Acquisition and Sustainment Life Cycle  Management (Apr 2009)<ul><li>Paragraph 3.24: Programs and weapon  systems shall assess technical readiness (e.g., technology, design, and  manufacturing) as a routine part of program management. System Program Managers  (SPMs) / Program Managers (PMs) / Product Group Managers (PGMs) shall use  mature technology that has been demonstrated in an operationally relevant  environment prior to Milestone-B / Key Decision Point (KDP)-B approval. For  Major Defense Acquisition Programs (MDAP), the Milestone Decision Authority (MDA)  certifies technology maturity. </li><li>Paragraph 3.32: All programs shall  identify and manage industrial base constraints throughout all phases of the  life cycle, from requirements definition to disposal with emphasis on cost  control. Industrial base constraints include, but are not limited to, critical  raw materials, sources of strategic materials, diminishing manufacturing  sources and material shortages, manufacturing technologies and capabilities,  the supply chain, parts obsolescence, depot capacity, and industrial workforce.</li><li>Systems Engineering: Technical  considerations that constitute Systems Engineering include Diminishing  Manufacturing Sources; Infrastructure and Facilities; Material Management;  Manufacturing and Quality Assurance; Parts, Materials, and Processes; and  Producibility.</li></ul></li><li>Air  Force Instruction (AFI) 63-101, Acquisition and Sustainment Life Cycle  Management (Apr 2009)<ul><li>Paragraph 3.16.1, Programmatic Risk:  PMs shall pursue a comprehensive integrated risk analysis throughout life cycle  and shall prepare and maintain a risk management plan. These risk areas are  influenced by factors such as manufacturing processes.</li><li>Paragraph 3.16.5: All programs are  encouraged to conduct MRAs in preparation for program milestones and KDPs</li><li>Para. 3.48.4 and 3.48.4.3: The PM  shall present the system’s assessed MRLs as a part of all program, technical,  and Milestone decision reviews.</li></ul></li><li>Air  Force Materiel Command Instruction (AFMCI) 61-102, Advanced Technology  Demonstration Technology Transition Planning (May 2006) <ul><li>Advanced Technology Demonstration  Technology Transition Planning<ul><li>Required  use of MRLs to assess Category (CAT) 1 Advanced Technology Demonstration (ATD)  manufacturing readiness.</li><li>Para. 2.2.5: Air Force Research  Laboratory (AFRL) leads the development of MRL definitions and processes to  assess manufacturing readiness for applicable AFRL ATD programs </li><li>Technology Transition Plan (TTP)  functional strategies (Para. 3.6.5): Manufacturing / Quality Assurance (QA)  Strategy includes lean manufacturing and manufacturing development initiatives  as well as industrial-base capabilities</li></ul></li></ul></li></ul></li><li>Joint  Chiefs Requirements: policy prescribes the use of MRAs in the Capability  Production Document (CPD)<ul><li>Chairman  of the Joint Chiefs of Staff Instruction (CJCSI) 3170.01G  - Joint Capabilities Integration and  Development System (Mar 2009) and the Manual for the Operation of the Joint  Capabilities Integration and Development System (Jul 2009)<ul><li>Enclosure H, CPD: A CPD is finalized  after critical design review, and validated and approved before the Milestone C  acquisition decision.</li><li>Appendix A to Enclosure H (CPD  Format): Manufacturing Readiness Assessment will specifically identify any  manufacturing readiness challenges linked to the program's key performance parameters,  identify who performed the MRA, when the MRA was accomplished, whether an  independent MRA is planned, and, if applicable, when the Deputy Under Secretary  of Defense (DUSD) Science and Technology (S &amp; T) Executive review of the  program MRA is planned.</li></ul></li></ul></li><li>Center  MRL / MRA Policies:<ul><li>Aeronautical  Systems Center (ASC): <ul><li>Will require MRAs prior to milestone  reviews.</li><li>Addresses independent co-leadership  for Acquisition Category (ACAT) I programs.</li></ul></li><li>Air  Armament Center (AAC) August 2008 policy letter from AAC / Commander (CC) on  Integrated Program Assessments:<ul><li>Requires MRAs prior to Milestone B,  prior to Milestone C and prior to FRP decision</li></ul></li><li>Electronic  Systems Center (ESC): <ul><li>Include MRAs as part  of Operations  Standardization Evaluation Program (OSEP) </li></ul> </li></ul></li></ul>";
+//
+//arrPopup[4][0]  = "Logistics Netcentricity"
+//arrPopup[4][1]  = "<p>A fully integrated logistics network enabled by a global, centralized, and interactive IT system</p>";
+//
+//arrPopup[5][0]  = "Data Accuracy"
+//arrPopup[5][1]  = "<p>Standard processes / IT systems, including automated capabilities (e.g., RFID), improve data accuracy and reduce manual entry</p>";
+//
+//arrPopup[6][0]  = "Centralized Asset Management"
+//arrPopup[6][1]  = "<p>Programming, budgeting and execution of weapon system funding is prioritized and centrally managed to meet Air Force needs</p>";
+//
+//arrPopup[7][0]  = "Predictive Maintenance"
+//arrPopup[7][1]  = "<p>Maintenance and usage data analysis is used to be more effective in supply, maintenance and ops planning and scheduling activities</p>";
+
+</script>
+<!-- InstanceEndEditable -->
+</head>
+
+<body> 
+<!-- You don't need to change anything in the body tag -->
+
+<div id="popupContent">
+	<p id="poptitle" class="popupTitle"></p>
+    <div id="poptext"></div>
+    
+<!-- InstanceBeginEditable name="Anything" -->
+<!-- Narration -->
+
+<!-- InstanceEndEditable -->
+</div>
+
+<script language="javascript" type="text/javascript" >
+	document.getElementById('poptitle').innerHTML = arrPopup[iTerm-1][0];
+	document.getElementById('poptext').innerHTML = arrPopup[iTerm-1][1];
+</script>
+
+</body>
+<!-- InstanceEnd --></html>

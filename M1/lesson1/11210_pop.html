@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/txtPopup.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Popup Information</title>
+<!-- InstanceEndEditable -->
+<link href="../../afit_mra.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+	#poptext {
+		margin-top: 6px;
+		width: 610px;
+		height: 400px;
+		overflow: auto;
+		scrollbar-arrow-color:#ddd; 
+		scrollbar-base-color:#333;
+	}
+</style>
+
+<script language="JavaScript" type="text/JavaScript" src="../../scripts/afit_mra.js"></script>
+<!-- InstanceBeginEditable name="ScriptArea" -->
+<script src="../../scripts/swfobject_modified.js" type="text/javascript"></script>
+<script type="text/javascript" src="../../scripts/afit_mra.js"></script>
+<script src="../../scripts/swfobject_modified.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+var iTerm = getQueryValue('popterm')
+
+var arrPopup = new Array();
+var numTerm = 5;
+for (var i=0; i<numTerm; i++) {
+	arrPopup[i] = [];
+}
+
+
+arrPopup[0][0]  = "Government acquisition strategies do not require an in-depth risk analysis for manufacturing during product design.";
+arrPopup[0][1]  = "<p>They should:</p><ul><li>Establish effective source selection criteria to emphasize producibility and affordability</li><li>Identify incentives for contractors that focus on producibility and affordability during product development</li><li>Emphasize manufacturing / QA during Advanced Study Program reviews</li><li>Utilize strong Government advocates / champions</li><li>Note there is a gross lack of knowledge and personnel in this area</li><li>Hold PMs and chief engineers accountable</li><li>Educate Government PMs regarding the potential manufacturing / QA risks and their impacts to the overall system life cycle cost</li><li>Make long-term decisions that thoroughly consider all production risks down the road</li></ul>";
+
+arrPopup[1][0]  = "Government acquisition does not specify the right deliverables in contracts."
+arrPopup[1][1]  = "<p>They should:</p><ul><li>Verify the contractor has the right processes in place to deliver the right product</li><li>Use the right metrics to measure performance</li><li>Make the contractor demonstrate that they have a solid production plan</li><li>Require the prime to demonstrate control of manufacturing processes during development</li><li>Specify proper manufacturing / QA contractual requirements in development contracts</li></ul>";
+//
+arrPopup[2][0]  = "Benchmarking other industries will give a better picture of manufacturing-related issues during product development and risk mitigation plans"
+arrPopup[2][1]  = "<p>Specifically:</p><ul><li>Consider world-class performers in other industries</li><li>Think outside the box</li><li>Develop lessons learned</li><li>Evaluate commercial and Federal Aviation Administration (FAA) programs and practices</li><li>Consider having a budget for Producibility Improvement Program (PIP)</li></ul>";
+//
+arrPopup[3][0]  = "Production readiness must be assessed in a meaningful way."
+arrPopup[3][1]  = "<p>Do this through:</p><ul><li>Better manufacturing transition strategies</li><li>Willoughby templates (Transition from Development to Production)</li><li>Production Readiness Reviews (PRRs) that focus on the right parameters</li><li>Getting MRLs up and running and using them regularly</li><li>Requiring government PMs to develop manufacturing exit criteria for milestone reviews</li><li>Re-establishing and using government required Production Plans</li></ul></p>";
+//
+arrPopup[4][0]  = "Put more emphasis on suppliers during product development."
+arrPopup[4][1]  = "<p>Do this by:</p><ul><li>Ensuring the prime’s processes for management of their suppliers are solid</li><li>Managing requirements flow-down to lower-tier suppliers</li><li>Requiring suppliers participation on Integrated Product Teams (IPTs) during product development</li><li>Ensuring supplier participation in the systems engineering process, particularly manufacturing processes and procedures</li><li>Developing predictive indicators to assess a supplier’s internal health</li><li>Using common metrics</li></ul>";
+//
+//arrPopup[5][0]  = "Data Accuracy"
+//arrPopup[5][1]  = "<p>Standard processes / IT systems, including automated capabilities (e.g., RFID), improve data accuracy and reduce manual entry</p>";
+//
+//arrPopup[6][0]  = "Centralized Asset Management"
+//arrPopup[6][1]  = "<p>Programming, budgeting and execution of weapon system funding is prioritized and centrally managed to meet Air Force needs</p>";
+//
+//arrPopup[7][0]  = "Predictive Maintenance"
+//arrPopup[7][1]  = "<p>Maintenance and usage data analysis is used to be more effective in supply, maintenance and ops planning and scheduling activities</p>";
+
+</script>
+<!-- InstanceEndEditable -->
+</head>
+
+<body> 
+<!-- You don't need to change anything in the body tag -->
+
+<div id="popupContent">
+	<p id="poptitle" class="popupTitle"></p>
+    <div id="poptext"></div>
+    
+<!-- InstanceBeginEditable name="Anything" -->
+<!-- Narration -->
+
+<!-- InstanceEndEditable -->
+</div>
+
+<script language="javascript" type="text/javascript" >
+	document.getElementById('poptitle').innerHTML = arrPopup[iTerm-1][0];
+	document.getElementById('poptext').innerHTML = arrPopup[iTerm-1][1];
+</script>
+
+</body>
+<!-- InstanceEnd --></html>
